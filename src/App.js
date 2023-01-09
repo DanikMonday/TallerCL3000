@@ -7,6 +7,8 @@ import { Carrito } from './componentes/Carrito';
 import {Home} from './Home'
 import {Encabezado} from './componentes/Encabezado';
 import {Navegacion} from './componentes/Navegacion';
+import Pie from './componentes/Pie';
+import Contacto from './componentes/Contacto';
 
 function App() {
   return (
@@ -14,17 +16,20 @@ function App() {
     <div className="App">
       <Encabezado></Encabezado>
       <Navegacion></Navegacion>
-      {/* <Routes>
-          <Route path='/Carrito' element={<Carrito/>}/>
-          <Route path='/Descripcion' element={<Descripcion/>}/>
-          <Route path='/Productos' element={<Productos/>}/>
-          <Route path='/' element={<Home/>}/>
-      </Routes> */}
-      <Home></Home>
-      <Productos></Productos>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Carrito' element={<Carrito/>}/>
+        <Route path='/Productos' element={<Productos/>}/>
+      </Routes>
+     <Contacto
+     parrafo='CONTACTO' 
+     celular=' +57 321 9536176'
+     correo=' luce_2358@hotmail.com'></Contacto>
+       <Pie/>
       
     </div>
-    <Carrito></Carrito>
+    
+    
     </DataProvider>
   );
 }

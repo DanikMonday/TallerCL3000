@@ -29,7 +29,7 @@ export const Carrito = () => {
     }
 
     const removeProducto = id =>{
-        if (window.confirm('Eliminar producto?')) {
+        if (window.confirm('¿Eliminar producto?')) {
            carrito.forEach((item, index)=>{
             if (item.id === id) {
                 item.cantidad = 1;
@@ -47,7 +47,7 @@ export const Carrito = () => {
         <div className='carritos'>
             <div className='carrito'>
                 {
-                    carrito.length === 0 ? <h2>Carrito vacio</h2>: <>
+                    carrito.length === 0 ? <h2>Tu Carrito Está Vacío</h2>: <>
                     {
                     carrito.map((producto)=>(
                         <>

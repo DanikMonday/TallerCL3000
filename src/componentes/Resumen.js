@@ -36,7 +36,7 @@ export const Resumen = () => {
                                             </div>
 
                                             <h3 className='total'>Total: ${total}.000 COP</h3>
-                                             <ReactWhatsapp number='+57-316-406-6946' message="hi"><div><Link to="/Resumen" className='btn-wa'>ENVIAR PEDIDO VÍA WhatsApp...<BsWhatsapp></BsWhatsapp></Link></div>
+                                             <ReactWhatsapp number='+57-316-406-6946' message={`"hi" ${carrito.map(item =>producto.cantidad + producto.title)}`}><div><Link to="/Resumen" className='btn-wa'>ENVIAR PEDIDO VÍA WhatsApp...<BsWhatsapp></BsWhatsapp></Link></div>
                                            </ReactWhatsapp>
                                     </div>
                                 

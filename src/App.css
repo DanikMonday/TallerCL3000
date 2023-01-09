@@ -179,6 +179,7 @@ body{
   width:240px;
   margin-top: 10px;
   padding-bottom: 100px;
+  border-top:solid 3px #B52C2C;
 
 }
 
@@ -500,16 +501,23 @@ body{
 }
 
 .res-carro h3{
-  color:#9a9bca;
+  color:#ffffff;
 }
 
 .res-carro-int{
   background-color: white;
   width: 99px;
   height: 123px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .cop-prod-car{
   font-size:10px ;
+}
+.entrega{
+  margin-top: 10px;
 }

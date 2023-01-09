@@ -85,11 +85,13 @@ export const ElCarro = () => {
                                     <p className='cantidad'>{producto.cantidad}</p>
                                     <h2 className="nom-prod">{producto.title}</h2>
                                     <p> {(producto.price*(producto.cantidad))}.000</p>
+                                    <div><button className='btn-volver'>CONFIRMAR</button></div>
                                 </div>
                             </div>
                                
                         </div>
                         <h3 className='total'>Total: ${total}.000 COP</h3>
+                        <p className='entrega'>El tiempo de entrega depende de la cantidad de piezas solicitadas y las características específicas de cada producto, variando entre 15 y 30 días</p>
                         </>
 
                     ))

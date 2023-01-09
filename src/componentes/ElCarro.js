@@ -4,45 +4,14 @@ import { useContext } from 'react'
 import { DataContext } from './Dataprovider'
 import { BsTrashFill} from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Contador } from './Contador';
 
 export const ElCarro = () => {
+    
     const value = useContext(DataContext)
     const [carrito, setCarrito] =value.carrito
     const[total] = value.total
 
-    const restar = id =>{
-        carrito.forEach(item => {
-            if (item.id === id) {
-                item.cantidad === 1 ? item.cantidad = 1: item.cantidad -=1;
-            }
-            setCarrito([...carrito])
-        })
-
-    }
-
-    const sumar = id =>{
-        carrito.forEach(item => {
-            if (item.id === id) {
-                item.cantidad +=1;
-            }
-            setCarrito([...carrito])
-        })
-
-    }
-
-    const removeProducto = id =>{
-        if (window.confirm('¿Eliminar producto?')) {
-           carrito.forEach((item, index)=>{
-            if (item.id === id) {
-                item.cantidad = 1;
-                carrito.splice(index, 1)
-            }
-           
-           })
-           setCarrito([...carrito])
-        }
-      
-    }
   return (
     <div>
         <Bienvenida titulo='TU CARRITO'/>
@@ -69,12 +38,8 @@ export const ElCarro = () => {
                                         <div>
                                             <h2 className="nom-prod">{producto.title}</h2>
                                             <p className="p-descr-carro">{producto.description}</p> 
-                                            <div className="cont-conta">
-                                                <button className="btn-sus" onClick={() => restar(producto.id)}>-</button>
-                                                <p className='cantidad'>{producto.cantidad}</p>
-                                                <button className="btn-adi" onClick={() => sumar(producto.id)}>+</button>
-                                                <div className="btn-basu"  onClick={()=>removeProducto(producto.id)}><BsTrashFill/></div>
-                                            </div>
+                                            {/* <div>{producto.talla.mujer.map(t=><Contador talla={t}></Contador>)}</div> */}
+                                            <div><Contador></Contador></div>
                                         </div>
                                     </div>
                                     <div className='res-carro'>
@@ -85,7 +50,7 @@ export const ElCarro = () => {
                                         <p> {(producto.price*(producto.cantidad))}.000</p>
                                         <div><Link to="/Resumen" className='btn-volver'>CONFIRMAR</Link></div>
                                     </div>
-                            </div>
+                                    </div>
                             </div> 
                      
                                

@@ -31,7 +31,7 @@ const [total, setTotal] = useState(0);
             })
             setCarrito([...carrito, ...data])
         }else{
-            alert('El producto ya se añadió, ve al carrito para agregar más unidades')
+            alert('El producto ya se añadió, clickea la imagen del producto para agregar más unidades')
         }
     }
 

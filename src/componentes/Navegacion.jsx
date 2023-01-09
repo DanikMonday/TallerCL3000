@@ -11,7 +11,7 @@ export function Navegacion(){
       <Link to="/Productos" className="pro-nav">PRODUCTOS</Link>
     </div>
     <div>
-      <Link to="/Carrito" ><img className="img-cart" src={require("../images/cartb.png")}alt="carrito" /></Link>
+      <Link to="/ElCarro" ><img className="img-cart" src={require("../images/cartb.png")}alt="carrito" /></Link>
     </div>
  </div>
   );

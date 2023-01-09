@@ -1,6 +1,7 @@
 import React, {useContext} from "react";
 import {DataContext} from './Dataprovider';
 import {BsCartPlus } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export const ProductoItem = ({
     id,
@@ -18,7 +19,7 @@ export const ProductoItem = ({
         <div className="cada-prod"> 
             <div className="cont-prod">
                 <h2 className="nom-prod">{title}</h2>
-                <div><a to="/Carrito" className="cont-img-prod"><img className="img-prod" src={image}  alt="productibiris"/></a></div>
+                <div><Link to="/Carrito" className="cont-img-prod"><img className="img-prod" src={image}  alt="productibiris"/></Link></div>
                 
             </div>
             <div className="precio-prod">

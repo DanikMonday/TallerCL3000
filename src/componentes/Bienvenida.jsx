@@ -1,6 +1,6 @@
 import React from "react";
 
-function Bienvenida(props){
+export function Bienvenida(props){
   return(
    <div className="cont-bie">
         <div className="tit-bie">{props.titulo}</div>

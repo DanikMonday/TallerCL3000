@@ -2,6 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { DataContext } from './Dataprovider'
 import { BsTrashFill} from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export const Carrito = () => {
     const value = useContext(DataContext)
@@ -43,7 +44,7 @@ export const Carrito = () => {
     }
   return (
     <div>
-        <h1>Carrito</h1>
+      
         <div className='carritos'>
             <div className='carrito'>
                 {
@@ -67,6 +68,7 @@ export const Carrito = () => {
                                 </div>
                             </div> 
                             <div className="sec-conta">  
+                                <div className='btn-volver'><Link  to="/Productos" className='btn-volver'>Volver</Link></div>
                                 <div className="cont-conta">
                                     <button className="btn-sus" onClick={() => restar(producto.id)}>-</button>
                                     <p className='cantidad'>{producto.cantidad}</p>

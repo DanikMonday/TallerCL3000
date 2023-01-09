@@ -9,6 +9,7 @@ import {Encabezado} from './componentes/Encabezado';
 import {Navegacion} from './componentes/Navegacion';
 import Pie from './componentes/Pie';
 import Contacto from './componentes/Contacto';
+import { ElCarro } from './componentes/ElCarro';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/Carrito' element={<Carrito/>}/>
         <Route path='/Productos' element={<Productos/>}/>
+        <Route path= '/ElCarro' element={<ElCarro/>}></Route>
       </Routes>
      <Contacto
      parrafo='CONTACTO' 

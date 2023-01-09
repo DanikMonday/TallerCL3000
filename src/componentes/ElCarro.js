@@ -84,7 +84,7 @@ export const ElCarro = () => {
                                         <h2 className="nom-prod">{producto.title}</h2>
                                         <p> {(producto.price*(producto.cantidad))}.000</p>
                                         <div><Link to="/Resumen" className='btn-volver'>CONFIRMAR</Link></div>
-                                </div>
+                                    </div>
                             </div>
                             </div> 
                      

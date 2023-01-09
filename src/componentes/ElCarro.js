@@ -57,7 +57,7 @@ export const ElCarro = () => {
                         
                         <div className="sec-descr-gen-carro">
 
-                            <div className="sec-descr">
+                            <div className="sec-descr-carro">
                                 
                                     <div className="cont-prod-carro" key={producto.id}>
                                         <div className='cont-izq-carro'>
@@ -77,25 +77,27 @@ export const ElCarro = () => {
                                             </div>
                                         </div>
                                     </div>
-                                
-                            </div> 
-                            <div className='res-carro'>
-                                <h3>RESUMEN</h3>
-                                <div className='res-carro-int'>
-                                    <p className='cantidad'>{producto.cantidad}</p>
-                                    <h2 className="nom-prod">{producto.title}</h2>
-                                    <p> {(producto.price*(producto.cantidad))}.000</p>
-                                    <div><button className='btn-volver'>CONFIRMAR</button></div>
+                                    <div className='res-carro'>
+                                        <h3>RESUMEN</h3>
+                                        <div className='res-carro-int'>
+                                        <p className='cantidad'>{producto.cantidad}</p>
+                                        <h2 className="nom-prod">{producto.title}</h2>
+                                        <p> {(producto.price*(producto.cantidad))}.000</p>
+                                        <div><Link to="/Resumen" className='btn-volver'>CONFIRMAR</Link></div>
                                 </div>
                             </div>
+                            </div> 
+                     
                                
                         </div>
-                        <h3 className='total'>Total: ${total}.000 COP</h3>
-                        <p className='entrega'>El tiempo de entrega depende de la cantidad de piezas solicitadas y las características específicas de cada producto, variando entre 15 y 30 días</p>
+                       
                         </>
 
                     ))
-                }
+                }  
+                
+                <h3 className='total'>Total: ${total}.000 COP</h3>
+                <p className='entrega'>El tiempo de entrega depende de la cantidad de piezas solicitadas y las características específicas de cada producto, variando entre 15 y 30 días</p>
                 </>
 }
             </div>

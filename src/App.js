@@ -10,6 +10,7 @@ import {Navegacion} from './componentes/Navegacion';
 import Pie from './componentes/Pie';
 import Contacto from './componentes/Contacto';
 import { ElCarro } from './componentes/ElCarro';
+import { Resumen } from './componentes/Resumen';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/Carrito' element={<Carrito/>}/>
         <Route path='/Productos' element={<Productos/>}/>
         <Route path= '/ElCarro' element={<ElCarro/>}></Route>
+        <Route path= '/Resumen' element={<Resumen/>}></Route>
       </Routes>
      <Contacto
      parrafo='CONTACTO' 

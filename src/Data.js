@@ -43,7 +43,7 @@ const data = {
             {
                 id:4,
                 ref: "BA01DA",
-                title:"Batas",
+                title:"Bata Dacron",
                 price: "38.000",
                 image: require('./images/BA01DA.png'),
                 category: "Ropa de Trabajo",
@@ -55,7 +55,7 @@ const data = {
             {
                 id:5,
                 ref: "CH01RF",
-                title:"Chaquetas",
+                title:"Chaqueta Impermeable",
                 price: "65.000",
                 image: require('./images/CH02SFA-2.png'),
                 category: "Ropa de Trabajo",
@@ -67,7 +67,7 @@ const data = {
             {
                 id: 6,
                 ref:"CL01RF",
-                title:"Chalecos",
+                title:"Chaleco Impermeable",
                 price: "62.000",
                 image: require('./images/CL01RF.png'),
                 category: "Ropa de Trabajo",

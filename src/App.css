@@ -493,7 +493,7 @@ body{
   background-color: #B52C2C;
   border-radius: 15px;
   width: 110px;
-  height: auto;
+  height: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -507,7 +507,7 @@ body{
 .res-carro-int{
   background-color: white;
   width: 99px;
-  height: 123px;
+  height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -520,4 +520,44 @@ body{
 }
 .entrega{
   margin-top: 10px;
+}
+
+.btn-wa{
+  color:white;
+  width: 170px;
+  height: 20px;
+  background-color: #B52C2C;
+  font-size: 10px;
+  border-radius: 5px;
+  border-color: transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.res-items{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cont-prod-res{
+  background-color: #D9D9D9;
+  width:250px;
+  height: 145px;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtotal{
+  margin-top: 10px;
+}
+
+.sec-descr-carro{
+  display: flex;
+  margin-top: 40px;
 }

@@ -75,14 +75,16 @@ export const Carrito = () => {
                                     <button className="btn-adi" onClick={() => sumar(producto.id)}>+</button>
                                     <div className="btn-basu"  onClick={()=>removeProducto(producto.id)}><BsTrashFill/></div>
                                 </div>
+                                <div className='btn-volver'><Link  to="/ElCarro" className='btn-volver'>Ir al Carrito</Link></div>
                             </div> 
-                               
+                            <p className='subtotal'> <strong>Subtotal {producto.title}: ${(producto.price*(producto.cantidad))}.000</strong></p>
                         </div>
-                        <h3 className='total'>Total: ${total}.000 COP</h3>
+                        
                         </>
 
-                    ))
+                    )) 
                 }
+                <h3 className='total'>Total: ${total}.000 COP</h3>
                 </>
 }
             </div>

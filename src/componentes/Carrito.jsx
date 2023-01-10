@@ -73,7 +73,7 @@ export const Carrito = () => {
                                     <button className="btn-sus" onClick={() => restar(producto.id)}>-</button>
                                     <p className='cantidad'>{producto.cantidad}</p>
                                     <button className="btn-adi" onClick={() => sumar(producto.id)}>+</button>
-                                    <div className="btn-basu"  onClick={()=>removeProducto(producto.id)}><BsTrashFill/></div>
+                                    <div className="btn-basu"  onClick={()=>removeProducto(producto.id)}><BsTrashFill className='ico-trash'/></div>
                                 </div>
                                 <div className='btn-volver'><Link  to="/ElCarro" className='btn-volver'>Ir al Carrito</Link></div>
                             </div> 

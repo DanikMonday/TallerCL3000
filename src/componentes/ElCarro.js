@@ -71,11 +71,11 @@ export const ElCarro = () => {
                                                 <h2 className="nom-prod">{producto.title}</h2>
                                                 <p className="p-descr-carro">{producto.description}</p> 
                                                 <div className="cont-conta">
-                                                    <div>Talla</div>
+                                                    {/* <div>Talla</div> */}
                                                     <button className="btn-sus" onClick={() => restar(producto.id)}>-</button>
                                                     <p className='cantidad'>{producto.cantidad}</p>
                                                     <button className="btn-adi" onClick={() => sumar(producto.id)}>+</button>
-                                                    <div className="btn-basu"  onClick={()=>removeProducto(producto.id)}><BsTrashFill/></div>
+                                                    <div className="btn-basu"  onClick={()=>removeProducto(producto.id)}><BsTrashFill className='ico-trash'/></div>
                                                 </div>
                                                 
                                             </div>

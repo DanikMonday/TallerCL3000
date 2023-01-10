@@ -5,6 +5,8 @@ export const DataContext = createContext();
 
 
 export const DataProvider = (props) => {
+    // en estas vaariables se define un estado inicial correspondiente a una matriz vacía vacía
+    // En el primer renderizado el estado actual (productos) será igual al inicial ([])
 const [productos, setProductos] = useState([])
 const [carrito, setCarrito] = useState([])
 const [total, setTotal] = useState(0);
@@ -14,6 +16,7 @@ const [total, setTotal] = useState(0);
         if (producto) {
             setProductos(producto)
         }else{
+            // con esta sintaxis setProductos([]) se indica que el useEffect solo se va a ejecutar cuando se renderice la pantalla
             setProductos([])
         }
 
@@ -55,6 +58,7 @@ const [total, setTotal] = useState(0);
             setTotal(res)
         }
         getTotal()
+        // aqui de sescribe la derpendecnia de la funcion pues depende de lo que haya en el carrito
      }, [carrito])
 
      const value = {

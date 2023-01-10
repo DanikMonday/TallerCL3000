@@ -56,7 +56,7 @@ const data = {
                 id:5,
                 ref: "CH01RF",
                 title:"Chaqueta Impermeable",
-                price: "65.000",
+                price: "85.000",
                 image: require('./images/CH02SFA-2.png'),
                 category: "Ropa de Trabajo",
                 description:"Chaqueta Impermeable. Elaborada en recubrimiento; con forro en fleece, capota y caucho en el puño. Bordado delantero de logo. Tres bolsillos (2 exteriores y 1 interior)",

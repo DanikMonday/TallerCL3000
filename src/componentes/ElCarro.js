@@ -115,7 +115,7 @@ export const ElCarro = () => {
                             ))
                         }  
                         <h3 className='total'>Total: ${total}.000 COP</h3>
-                        <div><Link to="/Resumen" className='btn-volver'>CONFIRMAR</Link></div>
+                        <div><Link to="/Resumen" className='btn-conf'>CONFIRMAR</Link></div>
                         </div>
                 </div>
 

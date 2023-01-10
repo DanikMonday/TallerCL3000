@@ -673,6 +673,17 @@ body{
   border-radius: 10px;
   padding: 15px;
 }
-.sec-descr-gen-carro-res{
-
+.btn-conf{
+  color:rgb(19, 19, 19);
+  width: 78px;
+  height: 20px;
+  background-color: #ffffff;
+  font-size: 10px;
+  font-weight: 800;
+  border-radius: 5px;
+  border-color: transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,5 +1,6 @@
 import React, {useContext} from 'react'
 import {DataContext} from '../componentes/Dataprovider'
+import Bienvenida from './Bienvenida';
 import { ProductoItem } from './ProductoItem';
 
 export function Productos() {
@@ -7,11 +8,10 @@ export function Productos() {
     const value = useContext(DataContext);
     const [productos] = value.productos;
     console.log(productos);
-
     return (
         <>  
         <section className="sec-prod" >
-            <h1>Ropa de Trabajo</h1>
+        <Bienvenida titulo='Ropa de Trabajo'/> 
             <div className='ProductosTrabajo'>
                 {
                     productos.map(producto => (

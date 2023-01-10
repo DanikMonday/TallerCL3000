@@ -62,7 +62,7 @@ body{
   margin-top: 5px;
   width:100%;
   height: 40px;
-  background-color: #B52C2C;
+  background-color:#7e6363fd;
   display: flex;
   align-items:center;
   justify-content: space-evenly;
@@ -798,6 +798,15 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width:744px ) { 
+  .btn-conf{
+    width: 130px;
+    height: 30px;
+    font-size: 18px;
+
+  }
 }
 
 

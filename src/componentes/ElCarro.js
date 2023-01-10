@@ -93,7 +93,7 @@ export const ElCarro = () => {
                 </div>   
 
                 <div className='carrito-der'>
-                        <h3>RESUMEN</h3>
+                        <h2>RESUMEN</h2>
                         <div className='res-carro ' >
                         {
                             carrito.map((producto)=>(
@@ -102,6 +102,7 @@ export const ElCarro = () => {
                                                     <p className='cantidad'>{producto.cantidad}</p>
                                                     <h2 className="nom-prod">{producto.title}</h2>
                                                     <p> {(producto.price*(producto.cantidad))}.000</p>  
+                                                   
                                                 </div>
                                 </>
 

@@ -83,11 +83,8 @@ export const ElCarro = () => {
                                     
                                 </div> 
                         
-                                
                             </div>
-                        
-                            
-
+    
                         ))
                     }  
             
@@ -97,19 +94,15 @@ export const ElCarro = () => {
 
                 <div className='carrito-der'>
                         <h3>RESUMEN</h3>
-                        <div className='res-carro'>
+                        <div className='res-carro ' >
                         {
                             carrito.map((producto)=>(
                                 <>
-                                                <div className='res-carro-int '>
+                                                <div className='res-carro-int ' key={producto.id}>
                                                     <p className='cantidad'>{producto.cantidad}</p>
                                                     <h2 className="nom-prod">{producto.title}</h2>
                                                     <p> {(producto.price*(producto.cantidad))}.000</p>  
                                                 </div>
-                                    
-                                
-                            
-                            
                                 </>
 
                             ))

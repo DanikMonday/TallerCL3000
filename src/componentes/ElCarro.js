@@ -71,7 +71,7 @@ export const ElCarro = () => {
                                                 <h2 className="nom-prod">{producto.title}</h2>
                                                 <p className="p-descr-carro">{producto.description}</p> 
                                                 <div className="cont-conta">
-                                                    {/* <div>Talla</div> */}
+                                                    <div>Talla</div>
                                                     <button className="btn-sus" onClick={() => restar(producto.id)}>-</button>
                                                     <p className='cantidad'>{producto.cantidad}</p>
                                                     <button className="btn-adi" onClick={() => sumar(producto.id)}>+</button>
@@ -101,7 +101,7 @@ export const ElCarro = () => {
                                                 <div className='res-carro-int ' key={producto.id}>
                                                     <p className='cantidad'>{producto.cantidad}</p>
                                                     <h2 className="nom-prod">{producto.title}</h2>
-                                                    <p> {(producto.price*(producto.cantidad))}.000</p>  
+                                                    <p className="cantidad"> {(producto.price*(producto.cantidad))}.000</p>  
                                                    
                                                 </div>
                                 </>

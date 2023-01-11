@@ -60,7 +60,7 @@ export const Resumen = () => {
                     >
                       <div >
                         <Link to="/Resumen" className="btn-wa">
-                          ENVIAR PEDIDO VÍA WhatsApp...<BsWhatsapp className="ico-wa"></BsWhatsapp>
+                          ENVIAR PEDIDO VÍA WhatsApp...<BsWhatsapp className="ico-wa-res"></BsWhatsapp>
                         </Link>
                       </div>
                     </ReactWhatsapp>

@@ -19,7 +19,8 @@ export const ProductoItem = ({
         <div className="cada-prod"> 
             <div className="cont-prod">
                 <h2 className="nom-prod">{title}</h2>
-                <div><Link to="/Carrito" className="cont-img-prod"><img className="img-prod" src={image}  alt="productibiris"/></Link></div>
+                {/* <div><Link to="/Carrito" className="cont-img-prod"><img className="img-prod" src={image}  alt="productibiris"/></Link></div> */}
+                <Link to= "/Carrito" ><button className="cont-img-prod" onClick={()=>addCarrito(id)}><img className="img-prod" src={image}  alt="productibiris"/></button></Link>
                 
             </div>
             <div className="precio-prod">

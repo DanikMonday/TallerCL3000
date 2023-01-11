@@ -45,7 +45,7 @@ export const Contador = () => {
     <div>    
         {carrito.map((producto)=>(
         <div className="cont-conta">
-            <div>T</div>
+            <div>Talla</div>
             <button className="btn-sus" onClick={() => restar(producto.id)}>-</button>
             <p className='cantidad'>{producto.cantidad}</p>
             <button className="btn-adi" onClick={() => sumar(producto.id)}>+</button>

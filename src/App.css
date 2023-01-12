@@ -772,10 +772,26 @@ body{
   width: 18px;
   height: 18px;
 }
+
+.ico-wa-con{
+  padding: 5px 5px;
+    position: relative;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  border: none;
+}
+
+.ico-wa-con:hover{box-shadow: inset 0 0 5px rgba(80, 194, 76, 0.5), 0 0 5px rgba(14, 228, 32, 0.4);
+
+  outline-offset: 2px;
+  text-shadow: 1px 1px 6px #fff;
+  
+}
+
 .ico-wa{
   width: 18px;
   height: 18px;
   color: #2cb52c;
+  border: none;
 }
 
 .ico-wa:hover{

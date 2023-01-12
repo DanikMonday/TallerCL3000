@@ -13,8 +13,7 @@ const data = {
                 talla:{   mujer:["6","8","10"],
                             hombre:["28","30","32"]
                         } ,
-                cantidad: 0     
-
+                cantidad: 1
             },
             {
                 id:2,
@@ -26,7 +25,7 @@ const data = {
                 description:"Camisa Impermeable. Elaborada en recubrimiento; con forro en fleece, capota y caucho en el puño. Bordado delantero de logo. Tres bolsillos (2 exteriores y 1 interior)",
                 talla:{   mujer:["6","8","10"],
                 hombre:["28","30","32"]},
-                cantidad: 0
+                cantidad: 1
             },
             {
                 id:3,
@@ -38,7 +37,7 @@ const data = {
                 description:"Pijama Impermeable. Elaborada en recubrimiento; con forro en fleece, capota y caucho en el puño. Bordado delantero de logo. Tres bolsillos (2 exteriores y 1 interior)",
                 talla:{   mujer:["6","8","10"],
                 hombre:["28","30","32"]},
-                cantidad: 0
+                cantidad: 1
             },
             {
                 id:4,
@@ -50,7 +49,7 @@ const data = {
                 description:"Bata Impermeable. Elaborada en recubrimiento; con forro en fleece, capota y caucho en el puño. Bordado delantero de logo. Tres bolsillos (2 exteriores y 1 interior)",
                 talla:{   "mujer":["6","8","10"],
                 hombre:["28","30","32"]},
-                cantidad: 0
+                cantidad: 1
             },
             {
                 id:5,
@@ -62,7 +61,7 @@ const data = {
                 description:"Chaqueta Impermeable. Elaborada en recubrimiento; con forro en fleece, capota y caucho en el puño. Bordado delantero de logo. Tres bolsillos (2 exteriores y 1 interior)",
                 talla:{   "mujer":["6","8","10"],
                 hombre:["28","30","32"]},
-                cantidad: 0
+                cantidad: 1
             },
             {
                 id: 6,
@@ -74,7 +73,7 @@ const data = {
                 description:"Chaleco Impermeable. Elaborada en recubrimiento; con forro en fleece, capota y caucho en el puño. Bordado delantero de logo. Tres bolsillos (2 exteriores y 1 interior)",
                 talla:{   mujer:["6","8","10"],
                 hombre:["28","30","32"] },
-                cantidad: 0
+                cantidad: 1
             },
         ],
     };
